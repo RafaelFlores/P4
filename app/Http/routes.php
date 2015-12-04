@@ -11,6 +11,16 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'catalogController@getIndex');
+
+Route::get('/catalog', 'catalogController@getIndex');
+
+Route::post('/catalog', 'catalogController@postCatalog');
+
+Route::get('/blog', 'blogController@getBlog');
+
+Route::post('/blog', 'blogController@postBlog');
+
+Route::get('/contact', 'contactController@getContact');
+
+Route::post('/contact', 'contactController@postContact');
