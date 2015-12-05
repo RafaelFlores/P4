@@ -24,3 +24,11 @@ Route::post('/blog', 'blogController@postBlog');
 Route::get('/contact', 'contactController@getContact');
 
 Route::post('/contact', 'contactController@postContact');
+
+Route::get('/login', 'loginController@getLogin');
+
+Route::post('/login', 'loginController@postLogin');
+
+Route::get('/register', 'registerController@getRegister');
+
+Route::post('/register', 'registerController@postResgister');

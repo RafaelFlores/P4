@@ -14,6 +14,8 @@
                 <li><a href="/catalog">Catalog</a></li>
                 <li><a href="/blog">Blog</a></li>
                 <li><a href="/contact">Contact</a></li>
+                <li><a href="/login">Log In</a></li>
+                <li><a href="/register">Resgister</a></li>
             </ul>
         </header>
 
@@ -29,6 +31,8 @@
             <li><a href="/catalog">Catalog</a></li>
             <li><a href="/blog">Blog</a></li>
             <li><a href="/contact">Contact</a></li>
+            <li><a href="/login">Log In</a></li>
+            <li><a href="/register">Resgister</a></li>
         </ul>
     </footer>
 </html>
