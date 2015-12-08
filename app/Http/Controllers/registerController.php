@@ -11,7 +11,7 @@ class registerController extends controller {
   }
 
   public function getRegister() {
-    return view('RegisterView');
+    return view('registerView');
 
   }
 
