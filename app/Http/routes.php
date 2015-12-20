@@ -33,6 +33,14 @@ Route::get('/register', 'registerController@getRegister');
 
 Route::post('/register', 'registerController@postResgister');
 
+Route::get('/addProduct', 'productController@getAddProduct');
+
+Route::post('/addProduct', 'productController@postAddProduct');
+
+Route::get('/editProduct/{id?}', 'productController@getEditProduct');
+
+Route::post('/editProduct/{id?}', 'productController@postEditProduct');
+
 Route::get('/debug', function() {
 
     echo '<pre>';

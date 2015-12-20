@@ -11,7 +11,8 @@ class catalogController extends controller {
   }
 
   public function getIndex() {
-    return view('catalogView');
+    $products = \App\Product::all(); 
+    return view('catalogView')->with('products',$products);
 
   }
 

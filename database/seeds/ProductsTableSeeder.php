@@ -20,7 +20,7 @@ class ProductsTableSeeder extends Seeder
             and physical engineering. They are optimally scalable and configurable.
             Due to their modular design, the amplifiers can be tailored to meet
             specific requirements with regard to output power and frequency range.',
-            'link_to_image' => '/uploads/bba100.png',
+            'link_to_image' => 'uploads/bba100.png',
             ]);
 
         DB::table('products')->insert([
@@ -33,7 +33,7 @@ class ProductsTableSeeder extends Seeder
             broadband amplifier family, all-in-one amplifier systems with multiple
             frequency ranges from 9 kHz to 3.0 GHz and different power classes can
             be implemented..',
-            'link_to_image' => '/uploads/bba150.jpg',
+            'link_to_image' => 'uploads/bba150.jpg',
             ]);
 
     }
