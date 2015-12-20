@@ -19,6 +19,7 @@ AGTEL
         ?>
         {!! Html::image($product->link_to_image) !!}
         {!! Html::link('/editProduct/' . $product->id , 'Edit') !!}
+        {!! Html::link('/deleteProduct/' . $product->id , 'Delete') !!}
          <?php
         echo '<br>';
 

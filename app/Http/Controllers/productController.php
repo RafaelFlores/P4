@@ -50,7 +50,7 @@ class productController extends controller {
 
     if(is_null($product)) {
         \Session::flash('flash_message', 'Product not found.');
-        return redirect('\catalog');
+        return redirect('/catalog');
     }
     return view('editProductView')->with('product',$product);
 
@@ -64,6 +64,7 @@ class productController extends controller {
       [
             'title' => 'required|min:5',
             'description' => 'required|min:25',
+            'file' => 'image',
 
           ]
       );
@@ -90,6 +91,28 @@ class productController extends controller {
       \Session::flash('flash_message','Your Product Updated!');
       return redirect('/catalog');
   }
+
+  public function getDeleteProduct($id = null) {
+    $product = \App\Product::find($id);
+
+    if(is_null($product)) {
+        \Session::flash('flash_message', 'Product not found.');
+        return redirect('/catalog');
+    }
+    return view('deleteProductView')->with('product',$product);
+  }
+  public function getDoDeleteProduct($id = null) {
+      $product = \App\Product::find($id);
+      if(is_null($product)) {
+          \Session::flash('flash_message', 'Product not found.');
+          return redirect('/catalog');
+      }
+      $product->delete();
+      \Session::flash('flash_message', $product->title .'was deleted.');
+      return redirect('/catalog');
+
+  }
+
 
 }
   ?>

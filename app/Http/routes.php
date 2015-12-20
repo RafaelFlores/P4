@@ -41,6 +41,10 @@ Route::get('/editProduct/{id?}', 'productController@getEditProduct');
 
 Route::post('/editProduct/{id?}', 'productController@postEditProduct');
 
+Route::get('/deleteProduct/{id?}', 'productController@getDeleteProduct');
+
+Route::get('/doDeleteProduct/{id?}', 'productController@getDoDeleteProduct');
+
 Route::get('/debug', function() {
 
     echo '<pre>';

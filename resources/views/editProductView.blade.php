@@ -5,6 +5,14 @@ AGTEL
 @stop
 
 @section('content')
+@if(count($errors) > 0)
+   <ul>
+       @foreach ($errors->all() as $error)
+           <li>{{ $error }}</li>
+       @endforeach
+   </ul>
+@endif
+
 
  <h3>Edit</h3>
  {!! Form::open(array('method' => 'post', 'class' => 'form', 'enctype' => 'multipart/form-data',)) !!}
