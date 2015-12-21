@@ -4,7 +4,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 
-class CustomerController extends controller {
+class customerController extends controller {
 
   public function __construct() {
 
