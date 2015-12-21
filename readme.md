@@ -1,27 +1,44 @@
-## Laravel PHP Framework
+# AGTEL SITE
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+## Live URL
+<http://p4.raspike.me>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+## Description
+1. A landing page with a description of the app
+2. 3 buttons to access features.
+3. Lorem Ipsum Generator: You can generate up to 99 paragraphs of
+random text. Includes validation. Only integers are accepted,
+the field is required. Maximum value of 99
+4. Random User Generator: Generate random data for users by default Includes
+name and address, it has three additional options: email, username and
+password. Validation for number of users: It is a required field. Only
+integers are accepted, max number 99.
+5. xkcd Password Generator: adapted from p2, Generate xkcd passwords up to 10
+words. with two optional fields. include a number and/or include a symbol.
+Validation for the number of words: Its a required field, max number of 10,
+only integers are accepted.
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
 
-## Official Documentation
+## Demo
+<https://youtu.be/FJTTcZn1ZS4>
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+## Details for teaching team
+This web app has a landing page from where you can access the three tools
+It has button on the Top in, the content and in the footer.
+Each button is labeled with the name of the tool where it directs.
 
-## Contributing
+Each button redirects to an specific route:
+"/" for home
+"/lorem" for the lorem Ipsum Generator
+"randomuser" for the Random User Generator
+"passgen" for the xkcd Password Generator
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+Depending on the access method (Post or Get) the appropriate function in the
+controller will take the corresponding action.
+and then displayed in the view files.
 
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-### License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+## Outside code
+* For the Lorem Ipsum Generator the badcow/lorem-ipsum package is used.
+* For the Random User Generato the fzaninotto/faker package is used.
+* For the xkcd Password Generator the code on P2 was adapted to fit this project.
+* The css theme was taken from http://html5up.net/alpha
