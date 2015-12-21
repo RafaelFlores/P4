@@ -16,10 +16,6 @@ class customerController extends controller {
 
   }
 
-  public function postCatalog() {
-    return 'When a new Customer is added';
-  }
-
 
 }
   ?>
