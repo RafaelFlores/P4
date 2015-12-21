@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-AGTEL
+AGTEL Add Product
 @stop
 
 @section('content')

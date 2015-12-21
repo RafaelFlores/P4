@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', 'catalogController@getIndex');
+Route::get('/', 'catalogController@getHome');
 
 Route::get('/catalog', 'catalogController@getIndex');
 

@@ -78,7 +78,7 @@ AGTEL
 
 
 <div class="form-group">
-    {!! Form::submit('Save to data base!',
+    {!! Form::submit('Send Us an email!',
     array('class'=>'btn btn-primary')) !!}
 </div>
 {!! Form::close() !!}

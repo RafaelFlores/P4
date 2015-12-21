@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-AGTEL
+AGTEL Add Post
 @stop
 
 @section('content')
@@ -36,7 +36,7 @@ AGTEL
      {!! Form::label('Upload an Image') !!}
      {!! Form::file('file', null,
          array('required',
-               'class'=>'form-control')) !!}
+               'class'=>'btn btn-primary')) !!}
  </div>
 
  <div class="form-group">

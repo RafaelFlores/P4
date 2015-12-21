@@ -1,12 +1,12 @@
 @extends('layouts.master')
 
 @section('title')
-AGTEL
+AGTEL - Register
 @stop
 
 @section('content')
 
- <h3>Register Formulary</h3>
+ <h3>Register For News and Updates</h3>
  @if(count($errors) > 0)
     <ul>
         @foreach ($errors->all() as $error)
@@ -68,7 +68,7 @@ AGTEL
  </div>
 
  <div class="form-group">
-     {!! Form::submit('Save to data base!',
+     {!! Form::submit('Register for news and updates!',
        array('class'=>'btn btn-primary')) !!}
  </div>
  {!! Form::close() !!}

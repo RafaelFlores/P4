@@ -11,7 +11,7 @@ class catalogController extends controller {
   }
 
   public function getIndex() {
-    $products = \App\Product::all(); 
+    $products = \App\Product::all();
     return view('catalogView')->with('products',$products);
 
   }
@@ -20,6 +20,9 @@ class catalogController extends controller {
     return 'When a new Item is added';
   }
 
+  public function getHome() {
+      return view('homeView');
+  }
 
 }
   ?>

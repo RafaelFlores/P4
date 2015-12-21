@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-AGTEL
+AGTEL - Edit Post
 @stop
 
 @section('content')

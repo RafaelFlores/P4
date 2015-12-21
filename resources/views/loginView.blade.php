@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-AGTEL
+AGTEL - Login
 @stop
 
 @section('content')
