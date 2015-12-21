@@ -18,8 +18,10 @@ AGTEL
         echo $product->description .'<br>';
         ?>
         {!! Html::image($product->link_to_image) !!}
+        @if(Auth::check())
         {!! Html::link('/editProduct/' . $product->id , 'Edit') !!}
         {!! Html::link('/deleteProduct/' . $product->id , 'Delete') !!}
+        @endif
          <?php
         echo '<br>';
 

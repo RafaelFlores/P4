@@ -14,18 +14,18 @@ AGTEL
 @endif
 
 
- <h3>Edit Product</h3>
+ <h3>Edit Post</h3>
  {!! Form::open(array('method' => 'post', 'class' => 'form', 'enctype' => 'multipart/form-data',)) !!}
 
  <div class="form-group">
-     {!! Form::label('Product Title') !!}
-     {!! Form::text('title', $product->title,
+     {!! Form::label('Post Title') !!}
+     {!! Form::text('title', $post->title,
          array('required',
                'class'=>'form-control')) !!}
  </div>
  <div class="form-group">
      {!! Form::label('Add a description') !!}
-     {!! Form::textarea('description', $product->description,
+     {!! Form::textarea('description', $post->description,
          array('required',
                'class'=>'form-control')) !!}
  </div>
@@ -33,6 +33,13 @@ AGTEL
  <div class="form-group">
      {!! Form::label('Upload a New Image') !!}
      {!! Form::file('file', null,
+         array('required',
+               'class'=>'form-control')) !!}
+ </div>
+
+ <div class="form-group">
+     {!! Form::label('Post link to video') !!}
+     {!! Form::text('link_to_video', $post->link_to_video,
          array('required',
                'class'=>'form-control')) !!}
  </div>

@@ -14,15 +14,15 @@ AGTEL
 @endif
 
 
- <h3>Delete Product</h3>
+ <h3>Delete Post</h3>
  <p>
-     Are you sure you want to delete <em>{{$product->title}}</em>?
+     Are you sure you want to delete <em>{{$post->title}}</em>?
  </p>
  <p>
-     {!! Html::link('/doDeleteProduct/' . $product->id , 'Yes') !!}
+     {!! Html::link('/doDeletePost/' . $post->id , 'Yes') !!}
  </p>
  <p>
-     {!! Html::link('/catalog', 'No') !!}
+     {!! Html::link('/blog', 'No') !!}
  </p>
 
 

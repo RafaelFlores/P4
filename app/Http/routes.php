@@ -25,25 +25,49 @@ Route::get('/contact', 'contactController@getContact');
 
 Route::post('/contact', 'contactController@postContact');
 
-Route::get('/login', 'loginController@getLogin');
-
-Route::post('/login', 'loginController@postLogin');
-
 Route::get('/register', 'registerController@getRegister');
 
-Route::post('/register', 'registerController@postResgister');
+Route::post('/register', 'registerController@postRegister');
 
-Route::get('/addProduct', 'productController@getAddProduct');
+Route::get('/customers', 'customerController@getCustomers');
 
-Route::post('/addProduct', 'productController@postAddProduct');
+# Show login form
+Route::get('/login', 'Auth\AuthController@getLogin');
 
-Route::get('/editProduct/{id?}', 'productController@getEditProduct');
+# Process login form
+Route::post('/login', 'Auth\AuthController@postLogin');
 
-Route::post('/editProduct/{id?}', 'productController@postEditProduct');
+# Process logout
+Route::get('/logout', 'Auth\AuthController@getLogout');
 
-Route::get('/deleteProduct/{id?}', 'productController@getDeleteProduct');
+Route::group(['middleware' => 'auth'], function () {
 
-Route::get('/doDeleteProduct/{id?}', 'productController@getDoDeleteProduct');
+    Route::get('/addProduct', 'productController@getAddProduct');
+
+    Route::post('/addProduct', 'productController@postAddProduct');
+
+    Route::get('/editProduct/{id?}', 'productController@getEditProduct');
+
+    Route::post('/editProduct/{id?}', 'productController@postEditProduct');
+
+    Route::get('/deleteProduct/{id?}', 'productController@getDeleteProduct');
+
+    Route::get('/doDeleteProduct/{id?}', 'productController@getDoDeleteProduct');
+
+    Route::get('/addPost', 'postController@getAddPost');
+
+    Route::post('/addPost', 'postController@postAddPost');
+
+    Route::get('/editPost/{id?}', 'postController@getEditPost');
+
+    Route::post('/editPost/{id?}', 'postController@postEditPost');
+
+    Route::get('/deletePost/{id?}', 'postController@getDeletePost');
+
+    Route::get('/doDeletePost/{id?}', 'postController@getDoDeletePost');
+
+
+});
 
 Route::get('/debug', function() {
 

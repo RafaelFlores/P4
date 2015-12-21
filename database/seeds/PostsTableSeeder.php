@@ -22,8 +22,8 @@ class PostsTableSeeder extends Seeder
              better exploitation of the equipment and its accesories.
              You can rent for the minimum period of one week or more. Ask for our
              special offers',
-            'link_to_image' => '/public/uploads/instrumentos.png',
-            'link_to_video' => 'https://www.youtube.com/watch?v=JfjJOqdvACw',
+            'link_to_image' => 'uploads/instrumentos.png',
+            'link_to_video' => 'https://www.youtube.com/embed/JfjJOqdvACw',
             ]);
 
         DB::table('posts')->insert([
@@ -41,7 +41,7 @@ class PostsTableSeeder extends Seeder
              and civil use, and customers can choose which equipment they wish
              to have installed. Besides  ̧Series4200 radios, the tower can also
              be equipped with  ̧M3SR Series4400 multiband radios.',
-            'link_to_image' => '/public/uploads/mobile_tower.png',
+            'link_to_image' => 'uploads/mobile_tower.png',
             ]);
     }
 }

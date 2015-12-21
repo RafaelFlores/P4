@@ -15,13 +15,22 @@
 @endif
         <header>
             <ul>
+                @if(Auth::check())
                 <li><a href="/">Home</a></li>
                 <li><a href="/catalog">Catalog</a></li>
                 <li><a href="/addProduct">Add Product</a></li>
                 <li><a href="/blog">Blog</a></li>
+                <li><a href="/addPost">Add Post</a></li>
+                <li><a href="/customers">View Customers</a></li>
+                <li><a href="/logout">Logout</a></li>
+                @else
+                <li><a href="/catalog">Catalog</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/">Home</a></li>
                 <li><a href="/contact">Contact</a></li>
                 <li><a href="/login">Log In</a></li>
                 <li><a href="/register">Resgister</a></li>
+                @endif
             </ul>
         </header>
 
@@ -33,12 +42,22 @@
 
     <footer>
         <ul>
+            @if(Auth::check())
             <li><a href="/">Home</a></li>
             <li><a href="/catalog">Catalog</a></li>
+            <li><a href="/addProduct">Add Product</a></li>
             <li><a href="/blog">Blog</a></li>
+            <li><a href="/addPost">Add Post</a></li>
+            <li><a href="/customers">View Customers</a></li>
+            <li><a href="/logout">Logout</a></li>
+            @else
+            <li><a href="/catalog">Catalog</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/">Home</a></li>
             <li><a href="/contact">Contact</a></li>
             <li><a href="/login">Log In</a></li>
             <li><a href="/register">Resgister</a></li>
+            @endif
         </ul>
     </footer>
 </html>

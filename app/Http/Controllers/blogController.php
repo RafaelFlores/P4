@@ -11,8 +11,9 @@ class blogController extends controller {
   }
 
   public function getBlog() {
-    return view('blogView');
-
+    $posts = \App\Post::all();
+    $posts = $posts->reverse();
+    return view('blogView')->with('posts',$posts);
   }
 
   public function postBlog() {
