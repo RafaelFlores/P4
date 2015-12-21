@@ -40,8 +40,7 @@ AGTEL
  <div class="form-group">
      {!! Form::label('Post link to video') !!}
      {!! Form::text('link_to_video', $post->link_to_video,
-         array('required',
-               'class'=>'form-control')) !!}
+         array('class'=>'form-control')) !!}
  </div>
 
  <div class="form-group">

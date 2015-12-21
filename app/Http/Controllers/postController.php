@@ -24,7 +24,7 @@ class postController extends controller {
             'title' => 'required|min:5',
             'description' => 'required|min:25',
             'file' => 'required|image',
-            'link_to_video' => 'url',
+            //'link_to_video' => 'url',
           ]
       );
       $post = new \App\Post();
