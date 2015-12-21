@@ -4,41 +4,45 @@
 <http://p4.raspike.me>
 
 ## Description
-1. A landing page with a description of the app
-2. 3 buttons to access features.
-3. Lorem Ipsum Generator: You can generate up to 99 paragraphs of
-random text. Includes validation. Only integers are accepted,
-the field is required. Maximum value of 99
-4. Random User Generator: Generate random data for users by default Includes
-name and address, it has three additional options: email, username and
-password. Validation for number of users: It is a required field. Only
-integers are accepted, max number 99.
-5. xkcd Password Generator: adapted from p2, Generate xkcd passwords up to 10
-words. with two optional fields. include a number and/or include a symbol.
-Validation for the number of words: Its a required field, max number of 10,
-only integers are accepted.
-
+1.  A landing page with a description of the AGTEL business
+2.  A top menu with 6 buttons to access features.
+3.  CATALOG where you can see all the products that the company sells
+4.  BLOG in here you can see POSTS made by the administrator
+5.  HOME the landing page
+6.  CONTACT to send emails form the customers to the administrator
+7.  LOG IN in here the administrator can access more features
+8.  REGISTER a page where the customers can leave their data to get latter
+    news or updates.
+## Menu only for administrator
+9.  ADD PRODUCT in here the administrator can add a new product to the catalog
+    it will be automatically displayed in the CATALOG page
+10. ADD POST In here the administrator can add a new post to the blog
+    it will be automatically displayed in the BLOG page
+11. VIEW CUSTOMERS in this page the administrator will se a list of all
+    registered customers.
+12. LOGOUT this button will end the current session
+13. In the CATALOG page Edit and Delete buttons are displayed to Edit or Delete
+    Products from the catalog.
+14. In the BLOG page Edit and Delete buttons are displayed to Edit or Delete
+    Products from the Blog.
 
 ## Demo
-<https://youtu.be/FJTTcZn1ZS4>
+<https://youtu.be/wenFQN29Z90>
 
 ## Details for teaching team
-This web app has a landing page from where you can access the three tools
-It has button on the Top in, the content and in the footer.
-Each button is labeled with the name of the tool where it directs.
+The Idea for this web app is that the people who would run it don't need any advanced
+skills to modify add or delete items in the blog or catalog. The only thing they
+need to do is to Log In  and the features will present to them in a very easy way
+to use.
 
-Each button redirects to an specific route:
-"/" for home
-"/lorem" for the lorem Ipsum Generator
-"randomuser" for the Random User Generator
-"passgen" for the xkcd Password Generator
+In this web App you will need a user and a password
+The user name is:  somebody@harvard.edu
+The password is: crimson
 
-Depending on the access method (Post or Get) the appropriate function in the
-controller will take the corresponding action.
-and then displayed in the view files.
+For seeing the emails you should change the configuration in the contactController
+file with your own credentials to see the mails that the page sends.
+
+
 
 ## Outside code
-* For the Lorem Ipsum Generator the badcow/lorem-ipsum package is used.
-* For the Random User Generato the fzaninotto/faker package is used.
-* For the xkcd Password Generator the code on P2 was adapted to fit this project.
-* The css theme was taken from http://html5up.net/alpha
+* The css theme was taken from http://html5up.net/

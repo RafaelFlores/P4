@@ -48,21 +48,17 @@
         @endif
 
 
+</section>
 
 
-        @if(\Session::has('flash_message'))
-        <div class='sidebar'>
-            {{ \Session::get('flash_message') }}
-        </div>
-        @endif
 
     </header>
 
-        <section id="intro" class="wrapper">
-            @if(\Session::has('flash_message'))
-                <p><h3>{{ \Session::get('flash_message') }}</h3></p>
-            @endif
-        @yield('content')
+    <section id="intro" class="wrapper">
+        @if(\Session::has('flash_message'))
+            <p><h3>{{ \Session::get('flash_message') }}</h3></p>
+        @endif
+    @yield('content')
     </section>
 
 </body>
