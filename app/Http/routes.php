@@ -38,7 +38,7 @@ Route::get('/login', 'Auth\AuthController@getLogin');
 Route::post('/login', 'Auth\AuthController@postLogin');
 
 # Process logout
-Route::get('/logout', 'Auth\AuthController@getLogout');
+
 
 Route::group(['middleware' => 'auth'], function () {
 
@@ -66,6 +66,7 @@ Route::group(['middleware' => 'auth'], function () {
 
     Route::get('/doDeletePost/{id?}', 'postController@getDoDeletePost');
 
+    Route::get('/logout', 'Auth\AuthController@getLogout');
 
 });
 

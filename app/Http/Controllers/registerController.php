@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class registerController extends controller {
 
   public function __construct() {
-
+      $this->middleware('guest', ['except' => 'getLogout']);
   }
 
   public function getRegister() {

@@ -8,7 +8,7 @@ use Mail;
 class contactController extends controller {
 
     public function __construct() {
-
+        $this->middleware('guest', ['except' => 'getLogout']);
     }
 
     public function getContact() {

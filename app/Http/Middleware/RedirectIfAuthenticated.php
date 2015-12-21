@@ -35,7 +35,7 @@ class RedirectIfAuthenticated
     public function handle($request, Closure $next)
     {
         if ($this->auth->check()) {
-            \Session::flash('flash_message','This page is only for customers.');
+            \Session::flash('flash_message','This page is only for users that are not Logged In.');
             return redirect('/');
         }
 
